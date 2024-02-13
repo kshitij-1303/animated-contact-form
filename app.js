@@ -5,9 +5,9 @@ input.forEach(ipt => {
     ipt.parentNode.classList.add("not-empty");
   })
   ipt.addEventListener("blur", () => {
-    // if (ipt.value == "") {
-    //   ipt.parentNode.classList.remove("not-empty");
-    // }
-    ipt.parentNode.classList.remove("not-empty");
+    if (ipt.value == "") {
+      ipt.parentNode.classList.remove("not-empty");
+    }
+    ipt.parentNode.classList.remove("focus");
   })
 });
